@@ -13,12 +13,13 @@
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
   <base href="./">
-  
+
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A Selft taught flutter developer, technical writer and open source contributor.">
   <script src="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.js"></script>
-  <link rel="preload" href="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.wasm" as="fetch" crossOrigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.wasm" as="fetch"
+    crossOrigin="anonymous">
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -30,8 +31,18 @@
 
   <title>Chothani Jaydip</title>
   <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
 
   <style>
+   
+    .big {
+      margin-left: -25px;
+      border-width: 0 5px 10px 5px;
+      border-color: transparent transparent #fade28 transparent;
+      -webkit-animation-name: boom-triangle-big;
+      animation-name: boom-triangle-big;
+    }
+
     .lds-ripple {
       display: inline-block;
       position: relative;
@@ -82,48 +93,116 @@
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
     }
-    .loading {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-    }
-    
-    .loader {
-      border: 16px solid #f3f3f3;
-      border-radius: 50%;
-      border: 15px solid ;
-      border-top: 16px solid blue;
-      border-right: 16px solid white;
-      border-bottom: 16px solid blue;
-      border-left: 16px solid white;
-      width: 120px;
-      height: 120px;
-      -webkit-animation: spin 2s linear infinite;
-      animation: spin 2s linear infinite;
-    }
-    
-    @-webkit-keyframes spin {
+
+
+    @keyframes woosh {
       0% {
-        -webkit-transform: rotate(0deg);
+        width: 12px;
+        transform: translate(0px, 0px) rotate(-35deg);
       }
+
+      15% {
+        width: 50px;
+      }
+
+      30% {
+        width: 12px;
+        transform: translate(214px, -150px) rotate(-35deg);
+      }
+
+      30.1% {
+        transform: translate(214px, -150px) rotate(46deg);
+      }
+
+      50% {
+        width: 110px;
+      }
+
+      70% {
+        width: 12px;
+        transform: translate(500px, 150px) rotate(46deg);
+      }
+
+      70.1% {
+        transform: translate(500px, 150px) rotate(-37deg);
+      }
+
+      85% {
+        width: 50px;
+      }
+
       100% {
-        -webkit-transform: rotate(360deg);
+        width: 12px;
+        transform: translate(700px, 0) rotate(-37deg);
       }
     }
-    
-    @keyframes spin {
+
+    @keyframes boom-circle {
       0% {
-        transform: rotate(0deg);
+        opacity: 0;
       }
-      100% {
-        transform: rotate(360deg);
+
+      5% {
+        opacity: 1;
       }
+
+      30% {
+        opacity: 0;
+        transform: scale(3);
+      }
+
+      100% {}
+    }
+
+    @keyframes boom-triangle-big {
+      0% {
+        opacity: 0;
+      }
+
+      5% {
+        opacity: 1;
+      }
+
+      40% {
+        opacity: 0;
+        transform: scale(2.5) translate(50px, -50px) rotate(360deg);
+      }
+
+      100% {}
+    }
+
+    @keyframes boom-triangle {
+      0% {
+        opacity: 0;
+      }
+
+      5% {
+        opacity: 1;
+      }
+
+      30% {
+        opacity: 0;
+        transform: scale(3) translate(20px, 40px) rotate(360deg);
+      }
+
+      100% {}
+    }
+
+    @keyframes boom-disc {
+      0% {
+        opacity: 0;
+      }
+
+      5% {
+        opacity: 1;
+      }
+
+      40% {
+        opacity: 0;
+        transform: scale(2) translate(-70px, -30px);
+      }
+
+      100% {}
     }
   </style>
 
@@ -131,10 +210,26 @@
 
 <body>
 
-  <div class="loading">
-    <div class="loader"></div>
+  <div class="animation-container">
+    <div class="lightning-container">
+      <div class="lightning white"></div>
+      <div class="lightning red"></div>
+    </div>
+    <div class="boom-container">
+      <div class="shape circle big white"></div>
+      <div class="shape circle white"></div>
+      <div class="shape triangle big yellow"></div>
+      <div class="shape disc white"></div>
+      <div class="shape triangle blue"></div>
+    </div>
+    <div class="boom-container second">
+      <div class="shape circle big white"></div>
+      <div class="shape circle white"></div>
+      <div class="shape disc white"></div>
+      <div class="shape triangle blue"></div>
+    </div>
   </div>
-   <!-- This script installs service_worker.js to provide PWA functionality to
+  <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
