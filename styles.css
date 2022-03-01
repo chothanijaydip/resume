@@ -2,7 +2,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  background: linear-gradient(to bottom right, #070630 0%, #060454 100%);
+  background: linear-gradient(to bottom right, #000000 0%, #000000 100%);
   min-height: 100vh;
 }
 
