@@ -1,7 +1,7 @@
 {
     "name": "Jaydip Chothani",
-    "short_name": "Jaydip Chothani",
-    "start_url": "/resume/",
+    "short_name": "JC",
+    "start_url": "./",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
