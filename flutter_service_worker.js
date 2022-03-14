@@ -4,9 +4,9 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "009c9e65172e010890f7f65fde438006",
-"index.html": "cd7af0f66fa146e63695c0fd1adc2ff6",
-"/": "cd7af0f66fa146e63695c0fd1adc2ff6",
-"main.dart.js": "11cb209368b29280d29f3a44c12468a5",
+"index.html": "29b8ff831f07a3ca3415b13bfcc476cb",
+"/": "29b8ff831f07a3ca3415b13bfcc476cb",
+"main.dart.js": "b10f4ee5e08d6fdac765ab7dd7a59e31",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
@@ -55,9 +55,7 @@ const RESOURCES = {
 "assets/assets/projects/covid.png": "27c600501d335324e8fce4c5d6c22b76",
 "assets/assets/projects/quranB.png": "3cf070457b64cf93d11ad2073bff88e2",
 "assets/assets/projects/covidB.png": "1884ac58a9de5d81e995f1e46e4b7398",
-"assets/assets/cui.png": "b5608c4d79345ca955f990a24a454554",
 "assets/assets/dsc.png": "bd954ceeeb42b91899ebe1c3b0d79850",
-"assets/assets/flutterIsl.png": "aaaeddae163a2e71636d9d494e16f2db",
 "assets/assets/mob.png": "8da23c3f3133e35a5cdf0b1ce5d96ac6",
 "assets/assets/web.png": "0cab5a4c780d5734179506752c03247f",
 "assets/assets/hi.gif": "cad5918d86b6a7e83f1fb4acead70e4c",
