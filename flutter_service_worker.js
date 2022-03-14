@@ -4,16 +4,16 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "009c9e65172e010890f7f65fde438006",
-"index.html": "99a42bbe8206b5c9285236a444a4c3f4",
-"/": "99a42bbe8206b5c9285236a444a4c3f4",
-"main.dart.js": "1111db03d241324939fe0d0f7028d76a",
+"index.html": "cd7af0f66fa146e63695c0fd1adc2ff6",
+"/": "cd7af0f66fa146e63695c0fd1adc2ff6",
+"main.dart.js": "11cb209368b29280d29f3a44c12468a5",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "manifest.json": "05cbf4d8b6c6053d9007dfe6668d4506",
-"assets/AssetManifest.json": "2f58cf3b1cec35f86670d1332cbf9374",
+"assets/AssetManifest.json": "bb151363f43001e3f65105e8861b3048",
 "assets/NOTICES": "f52a3a6c54ec5f32f55bb24fbeff823a",
 "assets/FontManifest.json": "3ba95e877e8d977ed295b7a8efefeff7",
 "assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_AMS-Regular.ttf": "657a5353a553777e270827bd1630e467",
@@ -70,7 +70,11 @@ const RESOURCES = {
 "assets/assets/services/blog.png": "5e1cbb2c67e2b8ea9ae4bcce0705d2a4",
 "assets/assets/services/open.png": "4a5996597d32b06d91183f0860c29aab",
 "assets/assets/services/ui.png": "3cf727247752b730a05f51fe0177036f",
-"assets/assets/1.png": "4db57f32cf8c4e561deb752e6cf5999d"
+"assets/assets/1.png": "4db57f32cf8c4e561deb752e6cf5999d",
+"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
+"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
+"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
+"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba"
 };
 
 // The application shell files that are downloaded before a service worker can
